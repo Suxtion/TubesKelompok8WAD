@@ -108,10 +108,7 @@ class BarangController extends Controller
                 'data' => $barang
             ], 200);
         }
-        // Untuk web, kita bisa buat view show.blade.php atau redirect ke index/edit.
-        // Untuk contoh ini, kita bisa saja tidak menggunakan show view untuk web,
-        // karena detail bisa dilihat di edit atau langsung di index.
-        // Jika Anda ingin view detail, buat file barangs/show.blade.php
+ 
         return view('barangs.show', compact('barang'));
     }
 
@@ -180,8 +177,6 @@ class BarangController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
      * @param  \App\Models\Barang  $barang
      * @return \Illuminate\Http\Response
      */
